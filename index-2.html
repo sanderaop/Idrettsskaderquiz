@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz: Idrettsskader</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #333;
+    }
+    .quiz-container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .question {
+      margin-bottom: 25px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      transition: background 0.3s;
+    }
+    label.correct {
+      background-color: #d4edda;
+      border-left: 5px solid #28a745;
+    }
+    label.incorrect {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+    }
+    label:hover {
+      background-color: #e2e6ea;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .result {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="quiz-container">
+  <h1>Quiz: Idrettsskader</h1>
+  <form id="quizForm">
+
+    <div class="question">
+      <h3>1. Hva menes med en idrettsskade?</h3>
+      <label><input type="radio" name="q1" value="A"> En skade som skjer i arbeid</label><label><input type="radio" name="q1" value="B"> En skade som gir fravær fra trening og/eller konkurranse</label><label><input type="radio" name="q1" value="C"> En skade som ikke gjør vondt</label><label><input type="radio" name="q1" value="D"> En skade som bare rammer voksne</label>
+    </div>
+    
+    <div class="question">
+      <h3>2. Hva kjennetegner en akutt skade?</h3>
+      <label><input type="radio" name="q2" value="A"> Den kommer gradvis</label><label><input type="radio" name="q2" value="B"> Den skyldes alltid dårlig teknikk</label><label><input type="radio" name="q2" value="C"> Den skjer plutselig, ofte med et tydelig uhell</label><label><input type="radio" name="q2" value="D"> Den varer i flere måneder</label>
+    </div>
+    
+    <div class="question">
+      <h3>3. Hva er en belastningsskade?</h3>
+      <label><input type="radio" name="q3" value="A"> En skade som kommer av et fall</label><label><input type="radio" name="q3" value="B"> En skade som oppstår etter et slag</label><label><input type="radio" name="q3" value="C"> En skade som utvikles over tid ved gjentatt belastning</label><label><input type="radio" name="q3" value="D"> En skade som kun rammer profesjonelle utøvere</label>
+    </div>
+    
+    <div class="question">
+      <h3>4. Hvilke symptomer kan kroppen få ved en skade (inflammasjon)?</h3>
+      <label><input type="radio" name="q4" value="A"> Kulde, stivhet og nummenhet</label><label><input type="radio" name="q4" value="B"> Smerte, hevelse, varme, rødme og nedsatt funksjon</label><label><input type="radio" name="q4" value="C"> Trøtthet og kvalme</label><label><input type="radio" name="q4" value="D"> Hodepine og kløe</label>
+    </div>
+    
+    <div class="question">
+      <h3>5. Hva står bokstavene i PRICE for?</h3>
+      <label><input type="radio" name="q5" value="A"> Pain, Rest, Ice, Compression, Elevation</label><label><input type="radio" name="q5" value="B"> Protection, Rest, Ice, Compression, Elevation</label><label><input type="radio" name="q5" value="C"> Pressure, Rest, Immobilize, Cool, Elevate</label><label><input type="radio" name="q5" value="D"> Pulse, Rest, Ice, Check, Elevate</label>
+    </div>
+    
+    <div class="question">
+      <h3>6. Hva er forskjellen mellom PRICE og POLICE?</h3>
+      <label><input type="radio" name="q6" value="A"> POLICE handler bare om kulde</label><label><input type="radio" name="q6" value="B"> POLICE handler om å trene så raskt som mulig</label><label><input type="radio" name="q6" value="C"> POLICE bytter ut R med OL = optimal belastning</label><label><input type="radio" name="q6" value="D"> Det er ingen forskjell</label>
+    </div>
+    
+    <div class="question">
+      <h3>7. Hvor lenge varer akuttfasen etter en skade?</h3>
+      <label><input type="radio" name="q7" value="A"> 6 timer</label><label><input type="radio" name="q7" value="B"> 12 timer</label><label><input type="radio" name="q7" value="C"> 24 timer</label><label><input type="radio" name="q7" value="D"> 48 timer</label>
+    </div>
+    
+    <div class="question">
+      <h3>8. Hva gjør man i rehabiliteringsfasen?</h3>
+      <label><input type="radio" name="q8" value="A"> Hviler helt</label><label><input type="radio" name="q8" value="B"> Starter lett trening og behandling</label><label><input type="radio" name="q8" value="C"> Tester konkurranse</label><label><input type="radio" name="q8" value="D"> Bruker is hele tiden</label>
+    </div>
+    
+    <div class="question">
+      <h3>9. Hva er målet med treningsfasen?</h3>
+      <label><input type="radio" name="q9" value="A"> Å kunne jogge litt</label><label><input type="radio" name="q9" value="B"> Å trene uten å bruke skadeområdet</label><label><input type="radio" name="q9" value="C"> Å kunne prestere som før skaden</label><label><input type="radio" name="q9" value="D"> Å avslutte all trening</label>
+    </div>
+    
+    <div class="question">
+      <h3>10. Hva er viktig for å forebygge skader?</h3>
+      <label><input type="radio" name="q10" value="A"> Trene hardt uten oppvarming</label><label><input type="radio" name="q10" value="B"> Spise mye før trening</label><label><input type="radio" name="q10" value="C"> Variert trening, god teknikk og balanseøvelser</label><label><input type="radio" name="q10" value="D"> Unngå styrketrening</label>
+    </div>
+    
+    <div class="question">
+      <h3>11. Hva er en vanlig årsak til belastningsskader?</h3>
+      <label><input type="radio" name="q11" value="A"> Dårlig kosthold</label><label><input type="radio" name="q11" value="B"> Dårlig vær</label><label><input type="radio" name="q11" value="C"> Gjentatt belastning over tid</label><label><input type="radio" name="q11" value="D"> Akutt støt</label>
+    </div>
+    
+    <div class="question">
+      <h3>12. Hvilket tiltak kan hjelpe ved belastningsskader?</h3>
+      <label><input type="radio" name="q12" value="A"> Trene mer</label><label><input type="radio" name="q12" value="B"> PRICE og justert trening</label><label><input type="radio" name="q12" value="C"> Kald dusj og søvn</label><label><input type="radio" name="q12" value="D"> Ingen spesielle tiltak</label>
+    </div>
+    
+    <div class="question">
+      <h3>13. Hva slags øvelser anbefales for å forebygge ryggskader?</h3>
+      <label><input type="radio" name="q13" value="A"> Øvelser som bøyer ryggen bakover</label><label><input type="radio" name="q13" value="B"> Øvelser med tunge vekter og dårlig teknikk</label><label><input type="radio" name="q13" value="C"> Øvelser som styrker kjernemuskulatur og bruker riktig teknikk</label><label><input type="radio" name="q13" value="D"> Rygghev uten kontroll</label>
+    </div>
+    
+    <div class="question">
+      <h3>14. Hvorfor er oppvarming viktig?</h3>
+      <label><input type="radio" name="q14" value="A"> Den gjør deg svett</label><label><input type="radio" name="q14" value="B"> Den gir bedre konsentrasjon</label><label><input type="radio" name="q14" value="C"> Den forbereder kroppen og reduserer skaderisiko</label><label><input type="radio" name="q14" value="D"> Den hjelper mot stølhet</label>
+    </div>
+    
+    <div class="question">
+      <h3>15. Hva bør du gjøre hvis du mistenker hjernerystelse?</h3>
+      <label><input type="radio" name="q15" value="A"> Trene rolig videre</label><label><input type="radio" name="q15" value="B"> Drikke vann og legge deg</label><label><input type="radio" name="q15" value="C"> Fortsette med kamper</label><label><input type="radio" name="q15" value="D"> Avslutte aktiviteten og kontakte lege</label>
+    </div>
+    
+    <button type="button" onclick="calculateScore()">Send inn</button>
+    <div class="result" id="result"></div>
+  </form>
+</div>
+<script>
+  const correctAnswers = {
+    q1: "B", q2: "C", q3: "C", q4: "B", q5: "B",
+    q6: "C", q7: "D", q8: "B", q9: "C", q10: "C",
+    q11: "C", q12: "B", q13: "C", q14: "C", q15: "D"
+  };
+
+  function calculateScore() {
+    let score = 0;
+    let total = Object.keys(correctAnswers).length;
+
+    for (let key in correctAnswers) {
+      let selected = document.querySelector(`input[name="${key}"]:checked`);
+      let correctValue = correctAnswers[key];
+      let options = document.querySelectorAll(`input[name="${key}"]`);
+
+      options.forEach(option => {
+        let label = option.parentElement;
+        label.classList.remove("correct", "incorrect");
+
+        if (option.value === correctValue) {
+          label.classList.add("correct");
+        }
+
+        if (selected && option === selected && option.value !== correctValue) {
+          label.classList.add("incorrect");
+        }
+      });
+
+      if (selected && selected.value === correctValue) {
+        score++;
+      }
+    }
+    document.getElementById("result").innerText = `Du fikk ${score} av ${total} riktige!`;
+  }
+</script>
+</body>
+</html>
